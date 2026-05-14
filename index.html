@@ -9,7 +9,7 @@
     />
     <meta
       name="keywords"
-      content="Aaditya Golash, UBC computer science, business technology analyst, product operations, analytics, automation, ServiceNow, SQL, Python, BC co-op student"
+      content="Aaditya Golash, UBC computer science, business technology analyst, product operations, analytics, automation, ServiceNow, SQL, Python, BC co-op student, Seaspan business systems"
     />
     <meta name="author" content="Aaditya Golash" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -35,6 +35,7 @@
     <link rel="preload" as="image" href="assets/aaditya-golash-headshot.jpg" />
     <title>Aaditya Golash | Business Technology & Analytics Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="assets/contact.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,7 +44,6 @@
             "@type": "Person",
             "@id": "#aaditya-golash",
             "name": "Aaditya Golash",
-            "email": "mailto:aadigolash10@outlook.com",
             "image": "assets/aaditya-golash-headshot.jpg",
             "sameAs": [
               "https://linkedin.com/in/aaditya-golash-1021618",
@@ -110,6 +110,30 @@
                   "@type": "Answer",
                   "text": "Aaditya Golash is targeting business technology, business analysis, analytics, automation, product operations, and transformation roles."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "Has Aaditya Golash worked at Seaspan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No Seaspan employment is claimed on this portfolio. The Seaspan section explains why Aaditya is targeting similar operational business systems environments and how his current project experience transfers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does ServiceNow mean in Aaditya Golash's portfolio?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ServiceNow refers to the IT service management platform Aaditya used during his UBC IT co-op to manage incidents, analyze recurring issues, and support users under service level targets."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does Aaditya Golash include a TSX analytics project?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The TSX project shows reproducible data pipelines, risk modeling, validation, and stakeholder communication skills that transfer to business analysis work even though the domain is finance."
+                }
               }
             ]
           }
@@ -121,10 +145,18 @@
     <main>
       <nav class="nav" aria-label="Primary navigation">
         <a class="logo" href="#top" aria-label="Aaditya Golash home">AG</a>
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu" />
+        <label class="nav-menu-button" for="nav-toggle" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         <div class="nav-links">
+          <a href="#summary">Summary</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#target-fit">Fit</a>
+          <a href="#seaspan-bridge">Seaspan</a>
           <a href="#education">Education</a>
           <a href="#activities">Activities</a>
           <a href="#contact">Contact</a>
@@ -145,17 +177,18 @@
           <div class="quick-facts" aria-label="Availability and credentials">
             <span>Based in BC</span>
             <span>Open to relocate</span>
+            <span>Current UBC co-op student</span>
             <span>Valid driver's licence</span>
             <span>Valid work permit</span>
           </div>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#projects">View selected projects</a>
-            <a class="button secondary" href="mailto:aadigolash10@outlook.com">Email Aaditya</a>
+            <a class="button secondary contact-email" href="#contact" data-user="aadigolash10" data-domain="outlook.com">Email Aaditya</a>
           </div>
           <div class="profile-links" aria-label="Profile links">
-            <a href="mailto:aadigolash10@outlook.com">aadigolash10@outlook.com</a>
-            <a href="https://linkedin.com/in/aaditya-golash-1021618" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/Aaditya-Golash" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="contact-email" href="#contact" data-user="aadigolash10" data-domain="outlook.com">Email</a>
+            <a href="https://linkedin.com/in/aaditya-golash-1021618" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Aaditya-Golash" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
         <aside class="hero-card profile-card" aria-label="Portfolio snapshot">
@@ -171,10 +204,10 @@
           <span>Snapshot</span>
           <strong>Business + technology execution in BC</strong>
           <ul>
-            <li>UBC B.Sc. Computer Science Co-op student with a Management minor.</li>
+            <li>Current UBC B.Sc. Computer Science Co-op student with a Management minor.</li>
             <li>Based in BC, open to relocate, with valid work authorization and a valid driver's licence.</li>
             <li>$1.9M operating budget analytics and digital strategy support for 11,000+ students.</li>
-            <li>ServiceNow workflow analysis across a 12,000+ user IT environment under SLA targets.</li>
+            <li>ServiceNow IT service workflow analysis across a 12,000+ user environment under SLA targets.</li>
           </ul>
         </aside>
       </section>
@@ -186,15 +219,15 @@
         </div>
         <div>
           <strong>70%</strong>
-          <span>TA allocation processing time reduction</span>
+          <span>teaching assistant allocation processing time reduction</span>
         </div>
         <div>
           <strong>110+</strong>
-          <span>daily ServiceNow incidents managed during co op</span>
+          <span>daily IT service tickets managed during UBC co-op</span>
         </div>
         <div>
           <strong>37</strong>
-          <span>months of TSX equity data processed for portfolio optimization</span>
+          <span>months of Canadian equity data processed for analytics modeling</span>
         </div>
       </section>
 
@@ -219,7 +252,7 @@
         <dl>
           <div>
             <dt>Candidate profile</dt>
-            <dd>UBC B.Sc. Computer Science Co-op student with a Management minor and hands-on business systems experience.</dd>
+            <dd>Current UBC B.Sc. Computer Science Co-op student with a Management minor and hands-on business systems experience.</dd>
           </div>
           <div>
             <dt>Location and mobility</dt>
@@ -235,19 +268,20 @@
       <section class="section target-fit" id="target-fit">
         <div class="section-heading">
           <p class="eyebrow">Target fit</p>
-          <h2>Prepared for business technology work in operational environments like Seaspan.</h2>
+          <h2>Prepared to learn and contribute in complex operational environments like Seaspan.</h2>
           <p>
             Seaspan's shipbuilding and marine operations sit inside national scale programs where clean business systems, reliable
-            data, careful testing, and clear user support matter. I am targeting environments like that. I want to deliver business
-            technology that helps complex teams work with more safety, care, efficiency, and accountability.
+            data, careful testing, and clear user support matter. I am targeting environments like that because they require business
+            technology work that respects physical constraints, compliance, long project cycles, and multi-stakeholder coordination.
           </p>
         </div>
         <div class="fit-grid">
           <article>
             <span>Business systems</span>
-            <h3>ERP, UAT, and workflow readiness</h3>
+            <h3>ERP awareness, UAT, and workflow readiness</h3>
             <p>
               I connect requirements, process documentation, test cases, and user acceptance thinking to practical system adoption.
+              I have not worked inside Seaspan's ERP stack, so I would ramp by documenting current workflows before recommending changes.
             </p>
           </article>
           <article>
@@ -261,7 +295,44 @@
             <span>User enablement</span>
             <h3>ServiceNow, documentation, and support</h3>
             <p>
-              UBC IT taught me how to support live systems, communicate with nontechnical users, and improve knowledge architecture.
+              UBC IT taught me how to support live service workflows, communicate with nontechnical users, and improve knowledge architecture.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section seaspan-bridge" id="seaspan-bridge">
+        <div class="section-heading">
+          <p class="eyebrow">Seaspan bridge</p>
+          <h2>How my current experience transfers to shipbuilding business systems</h2>
+          <p>
+            My experience is not shipyard-specific yet. The relevant fit is the operating pattern: understand the current process,
+            document it clearly, validate data, test changes with users, and communicate tradeoffs before altering a live workflow.
+          </p>
+        </div>
+        <div class="bridge-grid">
+          <article>
+            <span>Physical operations</span>
+            <h3>Respect constraints before optimizing</h3>
+            <p>
+              In a shipyard, process changes must account for materials, safety, dependencies, and schedule risk. I would start with
+              observation, stakeholder interviews, and workflow mapping before proposing automation.
+            </p>
+          </article>
+          <article>
+            <span>Compliance mindset</span>
+            <h3>Document decisions and test evidence</h3>
+            <p>
+              My governance and IT support work has made documentation quality a first-class concern. For regulated operations, I would
+              keep requirements, acceptance criteria, test results, and change rationale traceable.
+            </p>
+          </article>
+          <article>
+            <span>Enterprise systems</span>
+            <h3>Translate between users and technical teams</h3>
+            <p>
+              I am strongest where business users, technical owners, and leadership need the same workflow explained at different levels:
+              pain point, data signal, system behavior, risk, and next action.
             </p>
           </article>
         </div>
@@ -309,9 +380,9 @@
               <strong>Kelowna, BC</strong>
             </div>
             <div>
-              <h3>IT Analyst Co op | University of British Columbia</h3>
+              <h3>IT Analyst Co-op | University of British Columbia</h3>
               <ul>
-                <li>Managed 110+ daily ServiceNow incidents under strict SLA targets in a 12,000+ user environment.</li>
+                <li>Managed 110+ daily ServiceNow IT service tickets under strict SLA targets in a 12,000+ user environment.</li>
                 <li>Analyzed incident trends and partnered with UBC Vancouver IT engineering to reduce recurring system failures.</li>
                 <li>Optimized KB0019190 metadata and supported Microsoft 365 migration plus AI chatbot deployment.</li>
               </ul>
@@ -365,14 +436,14 @@
               <span>Operations Automation</span>
               <strong>250+ applications | 70% processing time reduction | Top 3 cohort</strong>
             </div>
-            <h3>TA Allocation & Management System | Backend Project Lead</h3>
+            <h3>Teaching Assistant Allocation & Management System | Backend Project Lead</h3>
             <p>
               Led backend delivery for a platform replacing manual spreadsheet workflows used by UBC Computer Science administrators.
             </p>
             <ul>
               <li>Architected Flask, MySQL, and Docker workflows for term, course, application, and allocation management.</li>
               <li>Implemented 36+ backend features, including analytics dashboards and role based access control.</li>
-              <li>Built CI and CD deployment workflows and coordinated a six member Agile team.</li>
+              <li>Built continuous integration and deployment workflows and coordinated a six member Agile team.</li>
             </ul>
           </article>
 
@@ -544,7 +615,9 @@
         </div>
         <div class="skills-list">
           <span>Business process mapping</span>
+          <span>Workflow documentation</span>
           <span>Requirements analysis</span>
+          <span>User acceptance testing</span>
           <span>Product strategy</span>
           <span>Market research</span>
           <span>Financial modeling</span>
@@ -597,6 +670,27 @@
               transformation roles where technical delivery and stakeholder communication both matter.
             </p>
           </article>
+          <article>
+            <h3>Has Aaditya worked at Seaspan?</h3>
+            <p>
+              No Seaspan employment is claimed on this portfolio. The Seaspan section explains why Aaditya is targeting similar
+              operational business systems environments and how his current project experience transfers.
+            </p>
+          </article>
+          <article>
+            <h3>What does ServiceNow mean here?</h3>
+            <p>
+              ServiceNow refers to the IT service management platform Aaditya used during his UBC IT co-op to manage incidents,
+              analyze recurring issues, and support users under service level targets.
+            </p>
+          </article>
+          <article>
+            <h3>Why include the TSX analytics project?</h3>
+            <p>
+              The TSX project shows reproducible data pipelines, risk modeling, validation, and stakeholder communication skills that
+              transfer to business analysis work even though the domain is finance.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -609,9 +703,9 @@
           permit to work.
         </p>
         <div class="contact-links">
-          <a class="button primary" href="mailto:aadigolash10@outlook.com" aria-label="Email Aaditya">Email Aaditya</a>
-          <a class="button secondary" href="https://linkedin.com/in/aaditya-golash-1021618" target="_blank" rel="noreferrer" aria-label="Open Aaditya's LinkedIn profile">LinkedIn</a>
-          <a class="button secondary" href="https://github.com/Aaditya-Golash" target="_blank" rel="noreferrer" aria-label="Open Aaditya's GitHub profile">GitHub</a>
+          <a class="button primary contact-email" href="#contact" data-user="aadigolash10" data-domain="outlook.com" aria-label="Email Aaditya">Email Aaditya</a>
+          <a class="button secondary" href="https://linkedin.com/in/aaditya-golash-1021618" target="_blank" rel="noopener noreferrer" aria-label="Open Aaditya's LinkedIn profile">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/Aaditya-Golash" target="_blank" rel="noopener noreferrer" aria-label="Open Aaditya's GitHub profile">GitHub</a>
         </div>
       </section>
     </main>
