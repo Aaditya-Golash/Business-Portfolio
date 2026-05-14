@@ -299,6 +299,48 @@ h3 {
   box-shadow: 0 14px 30px rgba(16, 32, 51, 0.12);
 }
 
+.glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent), 0 0 15px var(--accent), inset 0 -2px 0 rgba(7, 22, 37, 0.08);
+  }
+  to {
+    box-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent), 0 0 30px var(--accent), inset 0 -2px 0 rgba(7, 22, 37, 0.08);
+  }
+}
+
+#contact-form {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+#contact-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+#contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
 .hero-card,
 .project-card,
 .fit-grid article,
