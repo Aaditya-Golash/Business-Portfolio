@@ -28,6 +28,17 @@ a {
   text-decoration: none;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
+a:focus-visible,
+.button:focus-visible {
+  outline: 3px solid rgba(29, 110, 210, 0.32);
+  outline-offset: 4px;
+}
+
 main {
   width: min(1160px, calc(100% - 32px));
   margin: 0 auto;
@@ -65,6 +76,17 @@ main {
 
 .nav-links a:hover {
   color: #0b1b2b;
+}
+
+.nav-links a {
+  border-bottom: 2px solid rgba(29, 110, 210, 0.28);
+  padding-bottom: 3px;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  border-color: #1d6ed2;
 }
 
 .hero {
@@ -156,6 +178,12 @@ h3 {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+.button::after {
+  margin-left: 8px;
+  content: ">";
+  font-weight: 900;
+}
+
 .button:hover {
   transform: translateY(-2px);
 }
@@ -170,6 +198,12 @@ h3 {
   border: 1px solid #cfdae7;
   background: rgba(255, 255, 255, 0.76);
   color: #102033;
+}
+
+.secondary:hover,
+.secondary:focus-visible {
+  border-color: #1d6ed2;
+  box-shadow: 0 14px 30px rgba(16, 32, 51, 0.12);
 }
 
 .hero-card,
