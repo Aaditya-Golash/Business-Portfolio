@@ -174,10 +174,12 @@ h3 {
 
 .hero-card,
 .project-card,
+.fit-grid article,
 .framework-grid div,
 .stats div,
 .timeline-item,
 .activity-card,
+.education-card,
 .contact {
   border: 1px solid rgba(190, 203, 218, 0.78);
   border-radius: 8px;
@@ -369,6 +371,29 @@ h3 {
   flex: 1;
 }
 
+.target-fit {
+  border-top: 1px solid #dce5ef;
+  border-bottom: 1px solid #dce5ef;
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.fit-grid article {
+  padding: 26px;
+}
+
+.fit-grid span {
+  color: #1d6ed2;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
 .framework-section {
   border-top: 1px solid #dce5ef;
   border-bottom: 1px solid #dce5ef;
@@ -397,6 +422,26 @@ h3 {
 
 .activity-card p {
   margin-bottom: 0;
+}
+
+.education-card {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1fr);
+  gap: 28px;
+  padding: 28px;
+}
+
+.education-card p {
+  margin-bottom: 0;
+}
+
+.education-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+  color: #526274;
+  line-height: 1.6;
 }
 
 .skills-list {
@@ -438,7 +483,9 @@ h3 {
   .hero,
   .split,
   .project-grid,
-  .framework-grid {
+  .fit-grid,
+  .framework-grid,
+  .education-card {
     grid-template-columns: 1fr;
   }
 
