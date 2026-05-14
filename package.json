@@ -1,0 +1,14 @@
+{
+  "name": "business-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aaditya Golash business technology portfolio website.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/serve.js",
+    "preview": "node scripts/serve.js dist 4173"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
