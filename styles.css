@@ -197,6 +197,45 @@ h3 {
   margin-top: 32px;
 }
 
+.quick-facts,
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quick-facts {
+  margin-top: 24px;
+}
+
+.quick-facts span {
+  border: 1px solid rgba(29, 110, 210, 0.24);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 9px 12px;
+  color: #334a63;
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.profile-links {
+  margin-top: 18px;
+  color: #46617d;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.profile-links a {
+  border-bottom: 1px solid rgba(29, 110, 210, 0.32);
+  padding-bottom: 3px;
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -252,6 +291,8 @@ h3 {
 .timeline-item,
 .activity-card,
 .education-card,
+.answer-summary dl,
+.faq-list article,
 .contact {
   border: 1px solid rgba(190, 203, 218, 0.78);
   border-radius: 8px;
@@ -322,6 +363,7 @@ h3 {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 64% 48%;
 }
 
 .section {
@@ -360,6 +402,42 @@ h3 {
   gap: 56px;
   align-items: start;
   border-top: 1px solid #dce5ef;
+}
+
+.answer-summary {
+  border-top: 1px solid #dce5ef;
+}
+
+.answer-summary dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.answer-summary dl div {
+  padding: 26px;
+}
+
+.answer-summary dl div + div {
+  border-left: 1px solid rgba(190, 203, 218, 0.78);
+}
+
+.answer-summary dt {
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.answer-summary dd {
+  margin: 0;
+  color: #526274;
+  font-size: 1.02rem;
+  line-height: 1.6;
 }
 
 .section-heading {
@@ -531,6 +609,24 @@ h3 {
   font-weight: 750;
 }
 
+.faq {
+  border-top: 1px solid #dce5ef;
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.faq-list article {
+  padding: 26px;
+}
+
+.faq-list p {
+  margin-bottom: 0;
+}
+
 .contact {
   margin-bottom: 64px;
   padding: clamp(28px, 5vw, 56px);
@@ -542,8 +638,15 @@ h3 {
 
 @media (max-width: 1020px) {
   .stats,
-  .activity-grid {
+  .activity-grid,
+  .answer-summary dl,
+  .faq-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .answer-summary dl div + div {
+    border-left: 0;
+    border-top: 1px solid rgba(190, 203, 218, 0.78);
   }
 
   .timeline-item {
@@ -557,7 +660,9 @@ h3 {
   .project-grid,
   .fit-grid,
   .framework-grid,
-  .education-card {
+  .education-card,
+  .answer-summary dl,
+  .faq-list {
     grid-template-columns: 1fr;
   }
 

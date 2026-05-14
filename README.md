@@ -24,5 +24,7 @@ The production output is generated in `dist/`.
 - Framework Preset: `Other`
 - Build Command: `npm run build`
 - Output Directory: `dist`
+- Optional Environment Variable: `SITE_URL=https://your-domain.com`
 
 The build script copies `index.html`, `styles.css`, and `assets/` into `dist/`.
+When `SITE_URL` is set, the build also emits canonical metadata, `robots.txt`, and `sitemap.xml` with absolute production URLs.
